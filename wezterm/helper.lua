@@ -5,9 +5,11 @@ require('styles')
 function helper(wt)
   local M = {}
   local timed = 0
+
   M.pprint = function(...)
     wt.log_info(dump({ { ... } }))
   end
+  
   M.debug = false
   M.wezterm = assert(wt, "Helper needs wezterm module passed")
   local config_dir = M.wezterm.config_dir
@@ -104,6 +106,7 @@ function helper(wt)
     return true
     -- code
   end)
+
   M.events.on("format-window-title", function(tab, pane, tabs, panes, config)
     local zoomed = ""
     if tab.active_pane.is_zoomed then
@@ -117,7 +120,6 @@ function helper(wt)
 
     return zoomed .. index .. tab.active_pane.title
   end)
-
 
   M.events.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
     local num = tab.tab_index
