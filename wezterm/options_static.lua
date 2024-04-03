@@ -22,10 +22,10 @@ local options = {
     target = "BackgroundColor",
   },
   warn_about_missing_glyphs = false,
-  font_size =10,
+  font_size = 10,
   default_cursor_style = "BlinkingUnderline",
   custom_block_glyphs = true,
-  dpi = 96.0,
+  --dpi = 96.0,
   status_update_interval = 2000,
   -- use_cap_height_to_scale_fallback_font=true,
   -- font_hinting = "VerticalSubpixel",
@@ -76,16 +76,7 @@ local options = {
   scrollback_lines = 1500,
   show_tab_index_in_tab_bar = false, -- false
   enable_scroll_bar = false,
-  tab_bar_at_bottom = true,
-  ssh_domains = {
-      {
-        name = "maindesk",
-        remote_address = "192.168.68.104",
-        ssh_option = {
-          identityfile = "/home/chris/.ssh/id_rsra.pub",
-        }
-      }
-    }
+  tab_bar_at_bottom = true
 }
 
 return options
