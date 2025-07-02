@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0">
+  <diagram name="Page-1" id="xXGnbvc1p2iJjgl3LUql">
+    <mxGraphModel dx="2455" dy="1060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-1" value="WFG&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Data platform&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" vertex="1" parent="1">
+          <mxGeometry x="480" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-6" value="Message Broker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="910" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-8" value="Agent" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-13" value="Enters policy" style="endArrow=classic;html=1;rounded=0;exitX=0.946;exitY=0.47;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.68;entryY=0.083;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="N-DxG8cqmjIvkTzkcek1-8" target="N-DxG8cqmjIvkTzkcek1-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="370" as="sourcePoint" />
+            <mxPoint x="290" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-14" value="Store front" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="130.01" y="369.99" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="N-DxG8cqmjIvkTzkcek1-46" target="N-DxG8cqmjIvkTzkcek1-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-59" value="Produce events" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="N-DxG8cqmjIvkTzkcek1-53">
+          <mxGeometry x="0.1117" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-46" value="Agent Domain" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;container=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="230" width="300" height="360" as="geometry">
+            <mxRectangle x="360" y="170" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-43" value="Policy lapsed" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N-DxG8cqmjIvkTzkcek1-46">
+          <mxGeometry x="31.03" y="25.71" width="124.14" height="34.29" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-44" value="Policy renewed" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N-DxG8cqmjIvkTzkcek1-46">
+          <mxGeometry x="31.03" y="70" width="124.14" height="34.29" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N-DxG8cqmjIvkTzkcek1-46" source="N-DxG8cqmjIvkTzkcek1-45" target="N-DxG8cqmjIvkTzkcek1-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-45" value="Policy approved" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N-DxG8cqmjIvkTzkcek1-46">
+          <mxGeometry x="31.03" y="110" width="124.14" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-27" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="N-DxG8cqmjIvkTzkcek1-46">
+          <mxGeometry x="155.1706896551724" y="240" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="N-DxG8cqmjIvkTzkcek1-46" source="N-DxG8cqmjIvkTzkcek1-44" target="N-DxG8cqmjIvkTzkcek1-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.9;entryY=0.138;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="N-DxG8cqmjIvkTzkcek1-46" source="N-DxG8cqmjIvkTzkcek1-43" target="N-DxG8cqmjIvkTzkcek1-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N-DxG8cqmjIvkTzkcek1-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.333;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="N-DxG8cqmjIvkTzkcek1-46" target="N-DxG8cqmjIvkTzkcek1-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
