@@ -1,0 +1,19 @@
+# oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\emodipt-extend.omp.json | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\montys.omp.json | Invoke-Expression
+# this keeps the prompt always at the bottom
+
+oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\tokyo.omp.json | Invoke-Expression
+oh-my-posh init pwsh | Invoke-Expression
+$Global:__OriginalPrompt = $function:Prompt
+
+function prompt {
+    # put cursor at the bottom of the buffer
+    $rawUI = (Get-Host).UI.RawUI
+    $cp = $rawUI.CursorPosition
+    $cp.Y = $rawUI.BufferSize.Height - 1
+    $rawUI.CursorPosition = $cp
+
+    # and the prompt itself
+    $Global:__OriginalPrompt.Invoke()
+}
+clear
